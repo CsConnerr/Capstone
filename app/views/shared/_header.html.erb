@@ -1,0 +1,31 @@
+<section class="hero is-link is-small">
+	<div class="hero">
+		<nav section="navbar">
+			<div class="container">
+				<div id="navbarMenuHeroA" class="navbar-menu">
+					<div class="navbar-end">
+						<span class="navbar-item">
+						<%= link_to new_entry_path, class: "button is-success" do %>
+							Create new entry
+						<% end %>
+						</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+<div class="hero-body">
+	<div class="container has-text-centered">
+		<h1 class="title">
+			<% if content_for(:title) %>
+				<%= yield :title %>
+			<% else %>
+				SimPlan
+			<% end %>
+
+		</h1>
+	</div>
+</div>
+	
+</section>

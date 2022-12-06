@@ -1,0 +1,18 @@
+<% content_for :title do %>
+  SimPlan
+<% end %>
+
+<div id="entries" class="columns mt-6 is-centered">
+  <% @entries.each do |entry| %>
+    <div class="column is-one-quarter">
+      <div class="card">
+    <%= render entry %>
+    <p>
+      <%= link_to "Show this entry", entry %>
+    </p>
+  </div>  
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New entry", new_entry_path %>

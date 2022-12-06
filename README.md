@@ -1,3 +1,5 @@
-# Capstone
+# README
 
-https://www.sitepoint.com/an-introduction-to-fxruby/
+- Install Rails
+- `$ rails start`
+- Google it girlies

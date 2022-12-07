@@ -6,13 +6,19 @@
   <% @entries.each do |entry| %>
     <div class="column is-one-quarter">
       <div class="card">
-    <%= render entry %>
-    <p>
-      <%= link_to "Show this entry", entry %>
-    </p>
-  </div>  
+        <div class="card-content">
+        <%= render entry %>
+        <p>
+          <%= link_to "Show this entry", entry %>
+        </p>
+      </div>
+      </div>  
     </div>
   <% end %>
 </div>
 
-<%= link_to "New entry", new_entry_path %>
+<div class="columns mt-6 is-centered">
+  <button class="button is-primary">
+    <%= link_to "New entry", new_entry_path %>
+  </button>
+</div>

@@ -3,7 +3,7 @@
 <% end %>
 
 <div id="entries" class="columns mt-6 is-centered">
-  <% @entries.each do |entry| %>
+  <% @entries.all.order(:start_time).each do |entry| %>
     <div class="column is-one-quarter">
       <div class="card">
         <div class="card-content">
@@ -12,7 +12,7 @@
           <%= link_to "Show this entry", entry %>
         </p>
       </div>
-      </div>  
+      </div>
     </div>
   <% end %>
 </div>
